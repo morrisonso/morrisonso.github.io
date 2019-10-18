@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <h1>BETTA EQUIPMENT REVIEWS</h1>
+    </header>
+    <div class="container">
+        <ul id="navbar">
+            <li class="navitem"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a class="dropbttn">Reviews</a>
+                <div class="dropcontent">
+                    <a href="pageone.html" class="active">Page One</a>
+                    <a href="pagetwo.html">Page Two</a>
+                </div>
+            </li>
+            <li class="navitem"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="reviewTable">
+            <h2>BETTA TANKS</h2>
+            <p>Bettas are extremely territorial fish and are known to fight to the death when kept in a single tank.
+                For this reason, it is recommended that only one Betta fish should be kept in a tank of a minimum
+                quantity of 2.5 gallons. The following are tanks suitably designed for keeping Bettas.
+            </p>
+            <img id="tankBetta" src="assets/img/bettaintank.jpg" alt="Betta in a tank">
+            <table id="jsonTanks" class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Summary</th>
+                    <th>Price</th>
+                    <th>Our Rating</th>
+                </tr>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class ="starTable">
+        <!-- BUG: Carries rating through whole table. Eg if you click the last
+        star on the last row, the whole table fills out-->
+         <h2>USER RATINGS</h2>
+         <p>We can't agree on everything. If you've tried one of the above products,
+            let us know what you think by giving a rating or leaving a comment.
+         </p>
+            <table id="userRateTable">
+                <thead>
+                    <tr>
+                        <th>Tank</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tank1">
+                        <td>Blue Planet Betta+</td>
+                        <td>
+                            <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tank2">
+                        <td>Animates Betta Duo</td>
+                        <td>
+                            <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tank3">
+                        <td>Animates Betta Trio</td>
+                        <td>      
+                          <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tank4">
+                        <td>Imaginitarium Betta Home</td>
+                        <td>
+                            <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="tank5">
+                        <td>Blue Planet Classic</td>  
+                        <td>                          
+                            <div class="stars" data-rating="3">
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                                <span class="star">&nbsp;</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <div>
+            <h2>LEAVE A COMMENT</h2>
+            <!--BUG: comment section not functional-->
+            <input id="comName" type="text" name="commentName" placeholder="Your name here..."/>
+            <br><br>
+            <textarea id="enterComment" name="comment" placeholder="Your comment here..."></textarea>
+            <br>
+            <input id="commentContents" type="button" value="Post" />
+            <ul id="displayComment">
+                <li class="comments"><b>Beverly Marsh - 11/10/2019 13:16:44</b>
+                    <br><br>I bought the Blue Planet tank for my moon betta and he loves it.
+                </li>
+                <li class="comments"><b>Evey Hammond - 09/10/2019 11:32:02</b>
+                    <br><br>I found the filter on the duo tank to be too strong for my dragon bettas. They
+                    had trouble swimming against the current so I had to buffer it :(
+                </li>
+                <li class="comments"><b>Killian Jones - 08/10/2019 14:03:39</b>
+                    <br><br>Cheers for this. Helped me pick out a new tank for my guys!
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <footer>
+        <p class="footertxt">© S R MORRISON 2019</p>
+    </footer> 
+    <script src="assets/js/pageonejs.js"></script>   
+</body>
+</html>
